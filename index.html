@@ -23,7 +23,7 @@
           <a class="logo" href="./index.html" lang="en"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <div class="nav-wrapper" data-menu>
+          <div class="nav-wrapper" id="nav-wrapper" data-menu>
             <nav class="header-nav">
               <ul class="nav-list">
                 <li class="nav-list__item">
@@ -60,8 +60,8 @@
               <li class="link-list__item"><a href="#" class="links-list__link">LinkedIn</a></li>
             </ul>
           </div>
-          <button class="burger" data-menu-button>
-            <svg burger__icon width="40" height="40">
+          <button class="burger" data-menu-button aria-expanded="false" aria-controls="nav-wrapper">
+            <svg burger__icon width="40" height="40" aria-label="Перемикач мобільного меню">
               <use class="burger__close-icon" href="./images/icons.svg#icon-burger-close"></use>
               <use class="burger__open-icon" href="./images/icons.svg#icon-burger-open"></use>
             </svg>
