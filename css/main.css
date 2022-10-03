@@ -57,6 +57,9 @@ body {
   color: var(--text-color);
   background-color: var(--primary-white-color);
 }
+body.hidden {
+  overflow: hidden;
+}
 
 ul {
   list-style: none;
@@ -213,6 +216,7 @@ img {
   .section__title {
     font-size: 36px;
     line-height: 1.1666666667;
+    margin-bottom: 50px;
   }
 }
 

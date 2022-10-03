@@ -7,7 +7,7 @@
 
     menuBtnRef.classList.toggle('is-open');
     // menuBtnRef.setAttribute('aria-expanded', !expanded);
-
+    document.body.classList.toggle('hidden');
     mobileMenuRef.classList.toggle('is-open');
   });
 })();
