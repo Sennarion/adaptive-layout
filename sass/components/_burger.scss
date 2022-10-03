@@ -1,0 +1,28 @@
+.burger {
+  position: relative;
+  z-index: 100;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.burger__open-icon {
+  display: block;
+
+  .burger.is-open & {
+    display: none;
+  }
+}
+
+.burger__close-icon {
+  display: none;
+
+  .burger.is-open & {
+    display: block;
+  }
+}

@@ -7,6 +7,7 @@
   background-color: var(--backdrop-background-color);
   opacity: 1;
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  overflow-y: scroll;
 
   &.is-hidden {
     visibility: hidden;
@@ -31,6 +32,10 @@
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
   }
 }
 
@@ -131,6 +136,10 @@
   margin-bottom: 30px;
   font-size: 12px;
   line-height: calc(24 / 14);
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .checkbox__icon {
@@ -157,6 +166,11 @@
 
 .checkbox__policy {
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .checkbox__link {
