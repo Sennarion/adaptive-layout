@@ -36,6 +36,10 @@
 .team-list__description {
   text-align: center;
   padding: 30px;
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 24px;
+  }
 }
 
 .team-list__name {
