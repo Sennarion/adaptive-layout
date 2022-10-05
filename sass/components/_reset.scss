@@ -15,10 +15,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
   background-color: var(--primary-white-color);
-
-  &.hidden {
-    overflow: hidden;
-  }
 }
 
 ul {
