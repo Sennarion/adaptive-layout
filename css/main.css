@@ -486,21 +486,23 @@ img {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     opacity: 0;
+    visibility: hidden;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     padding: 48px 40px;
     background-color: var(--primary-white-color);
-    -webkit-transition: opacity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-    transition: opacity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-    transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
-    transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+    -webkit-transition: opacity 250ms var(--timing-function), visability 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+    transition: opacity 250ms var(--timing-function), visability 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+    transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function), visability 250ms var(--timing-function);
+    transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function), visability 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
   }
   .nav-wrapper.is-open {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
+    visibility: visible;
   }
 }
 @media screen and (min-width: 768px) {
