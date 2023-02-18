@@ -1,1 +1,1 @@
-Adaptive layout and graphics
+This is a simple website that I created to learn HTML and CSS. The site is adaptive for three types of devices: phone, tablet, and desktop. To speed up website loading, all icons are collected into one SVG sprite. To support Retina displays, I used adaptive images. The website also includes modal windows and a mobile burger menu. During development, I used Parcel and the SASS preprocessor. I used basic JavaScript to implement opening and closing of modal windows.
